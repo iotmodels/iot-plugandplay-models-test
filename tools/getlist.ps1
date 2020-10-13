@@ -1,0 +1,1 @@
+az iot pnp model list --query "[?modelState=='Listed'].modelId" > ids.json
