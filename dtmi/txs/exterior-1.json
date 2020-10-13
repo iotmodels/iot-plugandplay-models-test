@@ -1,0 +1,208 @@
+{
+  "@id": "dtmi:txs:exterior;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": {
+    "en": "Exterior"
+  },
+  "contents": [
+    {
+      "@id": "dtmi:txs:exterior:Ingress;1",
+      "@type": [
+        "Telemetry"
+      ],
+      "comment": "Event with Reader, Tag Id, and Proximity delimited by pipes",
+      "displayName": {
+        "en": "Ingress"
+      },
+      "name": "Ingress",
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:txs:exterior:Egress;1",
+      "@type": [
+        "Telemetry"
+      ],
+      "comment": "Event with Reader, Tag Id, and Proximity delimited by pipes",
+      "displayName": {
+        "en": "Egress"
+      },
+      "name": "Egress",
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:txs:exterior:Tag;1",
+      "@type": "Telemetry",
+      "comment": "Tag ID",
+      "displayName": {
+        "en": "Tag ID"
+      },
+      "name": "Tag",
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:txs:exterior:Prox;1",
+      "@type": "Telemetry",
+      "comment": "Proximity figure of merit",
+      "displayName": {
+        "en": "Proximity"
+      },
+      "name": "Prox",
+      "schema": "integer"
+    },
+    {
+      "@id": "dtmi:txs:exterior:Bt;1",
+      "@type": [
+        "Telemetry",
+        "Voltage"
+      ],
+      "displayName": {
+        "en": "Battery"
+      },
+      "unit": "volt",
+      "name": "Bt",
+      "schema": "integer"
+    },
+    {
+      "@id": "dtmi:txs:exterior:Rdr;1",
+      "@type": "Telemetry",
+      "description": {
+        "en": "Index"
+      },
+      "displayName": {
+        "en": "Reader"
+      },
+      "name": "Rdr",
+      "schema": "integer"
+    },
+    {
+      "@id": "dtmi:txs:exterior:Ttl;1",
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Time to live"
+      },
+      "name": "Ttl",
+      "schema": "integer"
+    },
+    {
+      "@id": "dtmi:txs:exterior:Pxc;1",
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Proximity count"
+      },
+      "name": "Pxc",
+      "schema": "integer"
+    },
+    {
+      "@id": "dtmi:txs:exterior:Ts;1",
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Timestamp"
+      },
+      "name": "Ts",
+      "schema": "dateTime"
+    },
+    {
+      "@id": "dtmi:txs:exterior:mWink;1",
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "Wink"
+      },
+      "name": "mWink"
+    },
+    {
+      "@id": "dtmi:txs:exterior:BleMask;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "BLE Proximity 'Filter' Mask"
+      },
+      "name": "BleMask",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:txs:exterior:BleFlags;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "BLE Proximity 'Compare' Filter"
+      },
+      "name": "BleFlags",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:txs:exterior:IngressDebounce;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "Ingress Debounce"
+      },
+      "name": "IngressDebounce",
+      "writable": true,
+      "schema": "integer"
+    },
+    {
+      "@id": "dtmi:txs:exterior:FilterRSSI;1",
+      "@type": [
+        "Property",
+        "SoundPressure"
+      ],
+      "displayName": {
+        "en": "Filter RSSI"
+      },
+      "name": "FilterRSSI",
+      "writable": true,
+      "unit": "decibel",
+      "schema": "integer"
+    },
+    {
+      "@id": "dtmi:txs:exterior:BleReportInterval;1",
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
+      "description": {
+        "en": "Report Interval for the beacon advertisers"
+      },
+      "displayName": {
+        "en": "BLE Interval"
+      },
+      "name": "BleReportInterval",
+      "writable": true,
+      "unit": "second",
+      "schema": "integer"
+    },
+    {
+      "@id": "dtmi:txs:exterior:BLEVersion;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "BLE Version"
+      },
+      "name": "BleVersion",
+      "schema": "string"
+    },
+    {
+      "@id": "dtmi:txs:exterior:EgressDebounce;1",
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
+      "displayName": {
+        "en": "Egress Debounce"
+      },
+      "name": "EgressDebounce",
+      "writable": true,
+      "unit": "second",
+      "schema": "integer"
+    },
+    {
+      "@id": "dtmi:txs:exterior:BleAddress;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "Ble Address"
+      },
+      "name": "BleAddress",
+      "schema": "string"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:MeshSystems:tXs_mbus1blerdr;6",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Valentine"
+  },
+  "contents": [
+    {
+      "@type": "Component",
+      "name": "DeviceInformation",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Exterior"
+      },
+      "name": "Exterior",
+      "schema": "dtmi:MeshSystems:tXs_blereader;1"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Peripherals"
+      },
+      "name": "Peripherals",
+      "schema": "dtmi:MeshSystems:tXs_per;5"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Location"
+      },
+      "name": "Location",
+      "schema": "dtmi:MeshSystems:tXs_location;3"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Cellular"
+      },
+      "name": "Cellular",
+      "schema": "dtmi:MeshSystems:tXs_cellular;3"
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "Modbus"
+      },
+      "name": "Modbus",
+      "schema": "dtmi:MeshSystems:tXs_modbus;2"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:samples:versioning;1",
+  "@type": "Interface",
+  "displayName": "Simple Interface",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "refreshInterval",
+      "schema": "string"
+    }
+  ]
+}

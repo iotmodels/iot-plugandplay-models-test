@@ -1,0 +1,95 @@
+{
+  "@id": "dtmi:txs:location;1",
+  "@type": "Interface",
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": {
+    "en": "Location"
+  },
+  "contents": [
+    {
+      "@id": "dtmi:txs:location:location;1",
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Location"
+      },
+      "name": "location",
+      "schema": "point"
+    },
+    {
+      "@id": "dtmi:txs:location:hdop;1",
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Horizontal Dilution of Precision"
+      },
+      "name": "hdop",
+      "schema": "double"
+    },
+    {
+      "@id": "dtmi:txs:location:fix;1",
+      "@type": "Telemetry",
+      "description": {
+        "en": "GNSS signal acquisition"
+      },
+      "displayName": {
+        "en": "Fix"
+      },
+      "name": "fix",
+      "schema": "integer"
+    },
+    {
+      "@id": "dtmi:txs:location:cog;1",
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Course Over Ground"
+      },
+      "name": "cog",
+      "schema": "double"
+    },
+    {
+      "@id": "dtmi:txs:location:spkm;1",
+      "@type": [
+        "Telemetry",
+        "Distance"
+      ],
+      "displayName": {
+        "en": "Speed"
+      },
+      "name": "spkm",
+      "unit": "kilometre",
+      "schema": "double"
+    },
+    {
+      "@id": "dtmi:txs:location:nsat;1",
+      "@type": "Telemetry",
+      "displayName": {
+        "en": "Num Satellites"
+      },
+      "name": "nsat",
+      "schema": "integer"
+    },
+    {
+      "@id": "dtmi:txs:location:DefaultLocation;1",
+      "@type": "Property",
+      "displayName": {
+        "en": "Default Location"
+      },
+      "name": "DefaultLocation",
+      "writable": true,
+      "schema": "integer"
+    },
+    {
+      "@id": "dtmi:txs:location:LocationInterval;1",
+      "@type": [
+        "Property",
+        "TimeSpan"
+      ],
+      "displayName": {
+        "en": "Location Interval"
+      },
+      "name": "LocationInterval",
+      "writable": true,
+      "unit": "second",
+      "schema": "integer"
+    }
+  ]
+}
