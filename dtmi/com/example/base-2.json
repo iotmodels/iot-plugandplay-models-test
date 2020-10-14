@@ -2,7 +2,7 @@
   "@context": "dtmi:dtdl:context;2",
   "@id": "dtmi:com:example:base;2",
   "@type": "Interface",
-  "displayName": "mybaseProp",
+  "displayName": "mybaseProp2",
   "contents": [
     {
       "@type": "Property",
