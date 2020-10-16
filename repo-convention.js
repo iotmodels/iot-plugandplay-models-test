@@ -28,9 +28,15 @@ const getDependencies = rootJson => {
   }
   if (rootJson.extends) {
     if (Array.isArray(rootJson.extends)) {
-      rootJson.extends.forEach(e => deps.push(e))
+      rootJson.extends.forEach(e => {
+        if (typeof e !== 'object') {
+          deps.push(e)
+        }
+      })
     } else {
-      deps.push(rootJson.extends)
+      if (typeof rootJson.extends !== 'object') {
+        deps.push(rootJson.extends)
+      }
     }
   }
   if (rootJson.contents) {
