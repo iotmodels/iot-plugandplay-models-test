@@ -2,6 +2,8 @@
   "@context": "dtmi:dtdl:context;2",
   "@id": "dtmi:com:example:interface;1",
   "@type": "Interface",
+  "extends" : "dtmi:com:example:base;2",
+  "displayName": "minimal interface1",
   "contents": [
     {
       "@type": "Property",
